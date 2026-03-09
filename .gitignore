@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.env
+.venv/
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Deep Learning & Model Weights
+*.safetensors
+*.pt
+*.pth
+*.bin
+*.ckpt
+*.h5
+
+# Hugging Face Trainer & Checkpoints
+checkpoint-*/
+optimizer.pt
+scheduler.pt
+scaler.pt
+rng_state.pth
+trainer_state.json
+
+# TensorBoard Logs
+runs/
+*tfevents*
+
+# Specific outputs/adapters from your workspace
+upsc-qwen-checkpoints/
+upsc-qwen2-5-vl-7b/
