@@ -1,0 +1,34 @@
+# ─────────────────────────────────────────────────────────
+# UPSC AI — Local GPU Setup
+# ─────────────────────────────────────────────────────────
+#
+# STEP 1: Install PyTorch with CUDA (run this FIRST in terminal)
+#
+#   For CUDA 12.1 (most modern GPUs — RTX 3000/4000 series):
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
+#
+#   For CUDA 11.8 (older GPUs — RTX 2000 series):
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
+#
+#   Check your CUDA version first with: nvidia-smi
+#
+# STEP 2: Install everything below
+#   pip install -r requirements.txt
+#
+# STEP 3: Run training
+#   python upsc_train_local_gpu.py
+#
+# STEP 4 (optional): Monitor training in browser
+#   tensorboard --logdir ./logs
+# ─────────────────────────────────────────────────────────
+
+transformers==4.47.0
+peft==0.13.0
+trl==0.12.0
+bitsandbytes==0.44.1
+accelerate==0.34.0
+datasets
+qwen-vl-utils
+pillow
+tensorboard
+requests
